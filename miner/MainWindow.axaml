@@ -2,8 +2,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="miner.MainWindow"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
+        x:Class="Miner.MainWindow"
         Title="miner">
-    Welcome to Avalonia!
+    
+    
+    <Grid RowDefinitions="Auto, Auto, *, Auto">
+        <Menu Grid.Row="0">
+            <MenuItem Header="Игра"/>
+            <MenuItem Header="Правка"/>
+            <MenuItem Header="Справка"/>
+        </Menu>
+        <Button Grid.Row="1" HorizontalAlignment="Center"></Button>
+        <Canvas Grid.Row="2" Background="Red"></Canvas>
+        <Grid Grid.Row="3" ColumnDefinitions="4*, Auto,*, Auto, 8*, Auto, *, Auto, 4*">
+            <TextBlock Grid.Column="1" Text="Флаги "/>
+            <TextBlock Grid.Column="3" Text="1/10"/>
+            <TextBlock Grid.Column="5" Text="Время "/>
+            <TextBlock Grid.Column="7" Text="00:00:00"/>
+        </Grid>
+    </Grid>
 </Window>

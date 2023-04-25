@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace miner;
+namespace Miner;
 
 public partial class MainWindow : Window
 {

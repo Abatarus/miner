@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace miner;
+namespace Miner;
 
 class Program
 {
